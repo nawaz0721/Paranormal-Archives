@@ -180,6 +180,7 @@ img {
 }
 
 .btn:hover::after {
+    
   animation: ripple 1s ease-out;
 }
 

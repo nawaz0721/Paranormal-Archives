@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (navigator.share) {
         navigator
           .share({
-            title: "Hospital Apparition - Paranormal Archives",
+            title: "Hospital Apparition - Real Ghost Capture",
             text: "Check out this chilling ghost footage captured at St. Mary's Hospital!",
             url: window.location.href,
           })

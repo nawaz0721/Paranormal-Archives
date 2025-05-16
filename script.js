@@ -479,7 +479,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (subscriptionForm) {
     subscriptionForm.addEventListener("submit", function (e) {
       e.preventDefault();
-      alert("Thank you for subscribing to Paranormal Archives!");
+      alert("Thank you for subscribing to Real Ghost Capture!");
 
       // Close modal
       const modal = this.closest(".modal");
