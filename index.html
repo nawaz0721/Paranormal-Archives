@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paranormal Archives | Premium Ghost Videos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@300;400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- Particle effect container -->
+    <div class="particle-container">
+        <div id="particles-js"></div>
+    </div>
+
+    <!-- Fog effect -->
+    <div class="fog-container">
+        <div class="fog-img fog-img-first"></div>
+        <div class="fog-img fog-img-second"></div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <h1><span class="ghost-icon"><i class="fas fa-ghost"></i></span> Paranormal Archives</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="login-btn"><a href="#login">Login</a></li>
+                <li class="signup-btn"><a href="#signup">Sign Up</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Discover the <span class="highlight">Unexplained</span></h2>
+            <p>Real ghost footage captured by paranormal investigators. Subscribe to access our exclusive collection of supernatural encounters and unexplained phenomena.</p>
+            <div class="cta-buttons">
+                <a href="#subscription-modal" class="btn primary-btn open-modal">Subscribe Now</a>
+                <a href="#videos" class="btn secondary-btn">Preview Videos</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number">200+</span>
+                    <span class="stat-label">Ghost Videos</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">50k+</span>
+                    <span class="stat-label">Members</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Years Experience</span>
+                </div>
+            </div>
+        </div>
+        <div class="video-preview">
+            <div class="video-container locked">
+                <img src="https://images.unsplash.com/photo-1626557981101-aae6f84aa6ff?q=80&w=640&auto=format&fit=crop" alt="Ghost video preview">
+                <div class="play-icon"><i class="fas fa-play"></i></div>
+                <div class="lock-overlay">
+                    <i class="fas fa-lock"></i>
+                    <p>Subscribe to Unlock</p>
+                </div>
+            </div>
+            <div class="video-badge">
+                <span>Featured</span>
+                <h3>The Shadowy Figure of Blackwood Manor</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured" class="featured">
+        <div class="section-header">
+            <div class="section-icon"><i class="fas fa-film"></i></div>
+            <h2>Featured <span class="highlight">Encounters</span></h2>
+            <p>Our most chilling paranormal evidence</p>
+        </div>
+        
+        <!-- Swiper for featured videos -->
+        <div class="swiper featured-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="featured-item locked">
+                        <div class="featured-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1603393518079-71d07663cc3a?q=80&w=600&auto=format&fit=crop" alt="Hospital Apparition">
+                            <div class="lock-icon"><i class="fas fa-lock"></i></div>
+                            <div class="video-duration">4:27</div>
+                        </div>
+                        <div class="featured-info">
+                            <h3>Hospital Apparition</h3>
+                            <p>Abandoned hospital corridor reveals unexpected visitor</p>
+                            <a href="video-detail.html" class="video-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="featured-item locked">
+                        <div class="featured-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1635979060838-f10a5cb2b3e6?q=80&w=600&auto=format&fit=crop" alt="Cemetery Orbs">
+                            <div class="lock-icon"><i class="fas fa-lock"></i></div>
+                            <div class="video-duration">3:15</div>
+                        </div>
+                        <div class="featured-info">
+                            <h3>Cemetery Orbs</h3>
+                            <p>Unexplained light phenomena captured at midnight</p>
+                            <a href="video-detail.html" class="video-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="featured-item locked">
+                        <div class="featured-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1509248961158-e54f6934749c?q=80&w=600&auto=format&fit=crop" alt="Shadow Figure">
+                            <div class="lock-icon"><i class="fas fa-lock"></i></div>
+                            <div class="video-duration">5:42</div>
+                        </div>
+                        <div class="featured-info">
+                            <h3>Shadow Figure</h3>
+                            <p>Dark entity caught on night vision camera</p>
+                            <a href="video-detail.html" class="video-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="featured-item preview">
+                        <div class="featured-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1596005554384-d293674c91d7?q=80&w=600&auto=format&fit=crop" alt="Basement EVP">
+                            <div class="play-icon"><i class="fas fa-play"></i></div>
+                            <div class="video-duration">2:18</div>
+                        </div>
+                        <div class="featured-info">
+                            <h3>Basement EVP</h3>
+                            <p>Clear voice captured in empty basement</p>
+                            <span class="free-tag">Free Preview</span>
+                            <a href="video-detail.html" class="video-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="featured-item locked">
+                        <div class="featured-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1505635552518-3448ff116af3?q=80&w=600&auto=format&fit=crop" alt="Haunted Mansion">
+                            <div class="lock-icon"><i class="fas fa-lock"></i></div>
+                            <div class="video-duration">7:12</div>
+                        </div>
+                        <div class="featured-info">
+                            <h3>Haunted Mansion</h3>
+                            <p>Victorian era ghost caught on thermal camera</p>
+                            <a href="video-detail.html" class="video-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="featured-item locked">
+                        <div class="featured-thumbnail">
+                            <img src="https://images.unsplash.com/photo-1518709766631-a6a7f45921c3?q=80&w=600&auto=format&fit=crop" alt="Forest Entity">
+                            <div class="lock-icon"><i class="fas fa-lock"></i></div>
+                            <div class="video-duration">4:55</div>
+                        </div>
+                        <div class="featured-info">
+                            <h3>Forest Entity</h3>
+                            <p>Strange creature captured during night investigation</p>
+                            <a href="video-detail.html" class="video-link">View Details <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        
+        <div class="view-all-container">
+            <a href="videos.html" class="btn secondary-btn">View All Videos</a>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="section-header">
+            <div class="section-icon"><i class="fas fa-folder"></i></div>
+            <h2>Video <span class="highlight">Categories</span></h2>
+            <p>Browse our paranormal collection by type</p>
+        </div>
+        
+        <div class="categories-grid">
+            <a href="videos.html?category=apparitions" class="category-card">
+                <div class="category-icon"><i class="fas fa-ghost"></i></div>
+                <h3>Apparitions</h3>
+                <p>42 videos</p>
+            </a>
+            <a href="videos.html?category=evp" class="category-card">
+                <div class="category-icon"><i class="fas fa-microphone"></i></div>
+                <h3>EVP Recordings</h3>
+                <p>38 videos</p>
+            </a>
+            <a href="videos.html?category=poltergeist" class="category-card">
+                <div class="category-icon"><i class="fas fa-wind"></i></div>
+                <h3>Poltergeist</h3>
+                <p>27 videos</p>
+            </a>
+            <a href="videos.html?category=orbs" class="category-card">
+                <div class="category-icon"><i class="fas fa-circle"></i></div>
+                <h3>Orbs & Lights</h3>
+                <p>56 videos</p>
+            </a>
+            <a href="videos.html?category=shadow" class="category-card">
+                <div class="category-icon"><i class="fas fa-user-secret"></i></div>
+                <h3>Shadow People</h3>
+                <p>31 videos</p>
+            </a>
+            <a href="videos.html?category=possession" class="category-card">
+                <div class="category-icon"><i class="fas fa-skull"></i></div>
+                <h3>Possession</h3>
+                <p>18 videos</p>
+            </a>
+        </div>
+    </section>
+
+    <section id="plans" class="subscription">
+        <div class="section-header">
+            <div class="section-icon"><i class="fas fa-ticket-alt"></i></div>
+            <h2>Subscription <span class="highlight">Plans</span></h2>
+            <p>Choose your level of access to the paranormal</p>
+        </div>
+        <div class="plans-container">
+            <div class="plan">
+                <div class="plan-header">
+                    <div class="plan-icon"><i class="fas fa-ghost"></i></div>
+                    <h3>Basic Access</h3>
+                    <div class="price">
+                        <span class="amount">$9.99</span>
+                        <span class="period">/month</span>
+                    </div>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Access to 50+ ghost videos</li>
+                        <li><i class="fas fa-check"></i> HD quality streaming</li>
+                        <li><i class="fas fa-check"></i> New videos monthly</li>
+                        <li class="not-included"><i class="fas fa-times"></i> Exclusive investigations</li>
+                        <li class="not-included"><i class="fas fa-times"></i> Behind the scenes</li>
+                        <li class="not-included"><i class="fas fa-times"></i> Paranormal webinars</li>
+                    </ul>
+                </div>
+                <a href="#subscription-modal" class="btn plan-btn open-modal" data-plan="basic">Subscribe Now</a>
+            </div>
+            <div class="plan featured-plan">
+                <div class="plan-badge">Most Popular</div>
+                <div class="plan-header">
+                    <div class="plan-icon"><i class="fas fa-ghost"></i></div>
+                    <h3>Premium Access</h3>
+                    <div class="price">
+                        <span class="amount">$19.99</span>
+                        <span class="period">/month</span>
+                    </div>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> Access to 100+ ghost videos</li>
+                        <li><i class="fas fa-check"></i> 4K quality streaming</li>
+                        <li><i class="fas fa-check"></i> Weekly new content</li>
+                        <li><i class="fas fa-check"></i> Exclusive investigations</li>
+                        <li><i class="fas fa-check"></i> Behind the scenes footage</li>
+                        <li><i class="fas fa-check"></i> Monthly paranormal webinars</li>
+                    </ul>
+                </div>
+                <a href="#subscription-modal" class="btn plan-btn featured-btn open-modal" data-plan="premium">Subscribe Now</a>
+            </div>
+            <div class="plan">
+                <div class="plan-header">
+                    <div class="plan-icon"><i class="fas fa-ghost"></i></div>
+                    <h3>Annual Pass</h3>
+                    <div class="price">
+                        <span class="amount">$179.99</span>
+                        <span class="period">/year</span>
+                    </div>
+                    <div class="save-badge">Save 25%</div>
+                </div>
+                <div class="plan-features">
+                    <ul>
+                        <li><i class="fas fa-check"></i> All Premium features</li>
+                        <li><i class="fas fa-check"></i> 4K quality streaming</li>
+                        <li><i class="fas fa-check"></i> Weekly new content</li>
+                        <li><i class="fas fa-check"></i> Exclusive investigations</li>
+                        <li><i class="fas fa-check"></i> Paranormal equipment guides</li>
+                        <li><i class="fas fa-check"></i> Quarterly paranormal box</li>
+                    </ul>
+                </div>
+                <a href="#subscription-modal" class="btn plan-btn open-modal" data-plan="annual">Subscribe Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="latest-evidence">
+        <div class="section-header">
+            <div class="section-icon"><i class="fas fa-camera"></i></div>
+            <h2>Latest <span class="highlight">Evidence</span></h2>
+            <p>Recently added to our paranormal archives</p>
+        </div>
+        
+        <div class="evidence-grid">
+            <div class="evidence-item">
+                <div class="evidence-date">
+                    <span class="day">12</span>
+                    <span class="month">MAY</span>
+                </div>
+                <div class="evidence-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1572867911146-662e3bdd84de?q=80&w=600&auto=format&fit=crop" alt="Abandoned Asylum">
+                    <div class="lock-icon"><i class="fas fa-lock"></i></div>
+                </div>
+                <div class="evidence-info">
+                    <span class="evidence-type">Full Apparition</span>
+                    <h3>Abandoned Asylum Nurse</h3>
+                    <p>Former nurse appears in abandoned psychiatric hospital</p>
+                    <a href="video-detail.html" class="evidence-link">View Evidence <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="evidence-item">
+                <div class="evidence-date">
+                    <span class="day">08</span>
+                    <span class="month">MAY</span>
+                </div>
+                <div class="evidence-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1504701954957-2010ec3bcec1?q=80&w=600&auto=format&fit=crop" alt="Haunted Hotel">
+                    <div class="lock-icon"><i class="fas fa-lock"></i></div>
+                </div>
+                <div class="evidence-info">
+                    <span class="evidence-type">EVP Session</span>
+                    <h3>Hotel Room 237</h3>
+                    <p>Clear voice responses during overnight investigation</p>
+                    <a href="video-detail.html" class="evidence-link">View Evidence <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <div class="evidence-item">
+                <div class="evidence-date">
+                    <span class="day">02</span>
+                    <span class="month">MAY</span>
+                </div>
+                <div class="evidence-thumbnail">
+                    <img src="https://images.unsplash.com/photo-1518889735218-3e3f29a5873c?q=80&w=600&auto=format&fit=crop" alt="Haunted Forest">
+                    <div class="lock-icon"><i class="fas fa-lock"></i></div>
+                </div>
+                <div class="evidence-info">
+                    <span class="evidence-type">Shadow Person</span>
+                    <h3>Forest Watcher</h3>
+                    <p>Tall shadow figure observed watching investigation team</p>
+                    <a href="video-detail.html" class="evidence-link">View Evidence <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="section-header">
+            <div class="section-icon"><i class="fas fa-quote-left"></i></div>
+            <h2>Subscriber <span class="highlight">Testimonials</span></h2>
+            <p>What our members are saying</p>
+        </div>
+        
+        <!-- Swiper for testimonials -->
+        <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"The most authentic ghost footage I've ever seen. Worth every penny of my subscription. I've been a member for over a year and the content keeps getting better."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Testimonial author">
+                            <div class="author-info">
+                                <h4>Michael R.</h4>
+                                <p>Premium Member</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"I've been researching paranormal activity for years, and this site has the best collection of evidence I've found. The analysis that comes with each video is incredibly detailed."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Testimonial author">
+                            <div class="author-info">
+                                <h4>Sarah L.</h4>
+                                <p>Annual Member</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"The video quality is excellent, and the analysis that comes with each video adds so much value. I appreciate how they debunk false evidence and only share authentic captures."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Testimonial author">
+                            <div class="author-info">
+                                <h4>James T.</h4>
+                                <p>Basic Member</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonial">
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"As a paranormal investigator myself, I find this archive invaluable. The techniques they use are professional and their evidence is compelling. Highly recommended!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Testimonial author">
+                            <div class="author-info">
+                                <h4>Emily K.</h4>
+                                <p>Premium Member</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <div class="section-header text-left">
+                    <div class="section-icon"><i class="fas fa-info-circle"></i></div>
+                    <h2>About <span class="highlight">Our Collection</span></h2>
+                </div>
+                <p>For over a decade, our team of paranormal investigators has ventured into the most haunted locations around the world, capturing compelling evidence of the supernatural.</p>
+                <p>Every video in our collection undergoes rigorous analysis to ensure authenticity. We never use special effects or staged encounters - what you see is genuine paranormal activity.</p>
+                <p>Our founder, a former skeptic turned believer after a life-changing encounter, established this archive to share real evidence with those seeking answers about the afterlife.</p>
+                <div class="about-stats">
+                    <div class="about-stat">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-label">Locations Investigated</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Hours of Footage</span>
+                    </div>
+                    <div class="about-stat">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Professional Investigators</span>
+                    </div>
+                </div>
+                <a href="about.html" class="btn secondary-btn">Learn More</a>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1635048438162-7a31e9942c24?q=80&w=800&auto=format&fit=crop" alt="Paranormal investigation equipment">
+                <div class="image-caption">Our team using specialized equipment during a recent investigation</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="equipment">
+        <div class="section-header">
+            <div class="section-icon"><i class="fas fa-tools"></i></div>
+            <h2>Investigation <span class="highlight">Equipment</span></h2>
+            <p>Professional tools we use to capture paranormal evidence</p>
+        </div>
+        
+        <div class="equipment-grid">
+            <div class="equipment-item">
+                <div class="equipment-icon"><i class="fas fa-temperature-low"></i></div>
+                <h3>Thermal Cameras</h3>
+                <p>Detect temperature variations invisible to the naked eye</p>
+            </div>
+            <div class="equipment-item">
+                <div class="equipment-icon"><i class="fas fa-microphone-alt"></i></div>
+                <h3>EVP Recorders</h3>
+                <p>Specialized audio equipment to capture spirit voices</p>
+            </div>
+            <div class="equipment-item">
+                <div class="equipment-icon"><i class="fas fa-bolt"></i></div>
+                <h3>EMF Meters</h3>
+                <p>Measure electromagnetic field fluctuations</p>
+            </div>
+            <div class="equipment-item">
+                <div class="equipment-icon"><i class="fas fa-video"></i></div>
+                <h3>Full Spectrum Cameras</h3>
+                <p>Capture light beyond human visual range</p>
+            </div>
+            <div class="equipment-item">
+                <div class="equipment-icon"><i class="fas fa-broadcast-tower"></i></div>
+                <h3>Spirit Boxes</h3>
+                <p>Scan radio frequencies for spirit communication</p>
+            </div>
+            <div class="equipment-item">
+                <div class="equipment-icon"><i class="fas fa-radiation"></i></div>
+                <h3>REM Pods</h3>
+                <p>Detect changes in the electromagnetic field</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter" class="newsletter">
+        <div class="newsletter-content">
+            <div class="section-icon"><i class="fas fa-envelope"></i></div>
+            <h2>Join Our <span class="highlight">Newsletter</span></h2>
+            <p>Get updates on new videos, exclusive content, and paranormal investigation tips</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Your email address" required>
+                <button type="submit" class="btn primary-btn">Subscribe</button>
+            </form>
+            <div class="newsletter-benefits">
+                <div class="benefit">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Weekly paranormal updates</span>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Exclusive subscriber content</span>
+                </div>
+                <div class="benefit">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Investigation location announcements</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2><i class="fas fa-ghost"></i> Paranormal Archives</h2>
+                <p>Uncovering the truth beyond the veil</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="#plans">Subscription</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="videos.html?category=apparitions">Apparitions</a></li>
+                        <li><a href="videos.html?category=evp">EVP Recordings</a></li>
+                        <li><a href="videos.html?category=poltergeist">Poltergeist</a></li>
+                        <li><a href="videos.html?category=orbs">Orbs & Lights</a></li>
+                        <li><a href="videos.html?category=shadow">Shadow People</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Copyright</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Form</a></li>
+                        <li><a href="mailto:info@paranormalarchives.com">Email Us</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Report Evidence</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Paranormal Archives. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <div class="modal-icon"><i class="fas fa-user-circle"></i></div>
+                <h2>Member Login</h2>
+                <p>Access your paranormal archives account</p>
+            </div>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" required>
+                    </div>
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn primary-btn">Login</button>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+            </form>
+            <div class="social-login">
+                <p>Or login with</p>
+                <div class="social-login-buttons">
+                    <button class="social-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+                    <button class="social-btn google"><i class="fab fa-google"></i> Google</button>
+                </div>
+            </div>
+            <div class="signup-link">
+                <p>Don't have an account? <a href="#signup" class="open-modal">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Signup Modal -->
+    <div id="signup" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <div class="modal-icon"><i class="fas fa-user-plus"></i></div>
+                <h2>Create Account</h2>
+                <p>Join our paranormal community</p>
+            </div>
+            <form class="signup-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="first-name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="last-name" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="signup-email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="signup-password" required>
+                    </div>
+                    <div class="password-strength">
+                        <div class="strength-meter">
+                            <div class="strength-segment"></div>
+                            <div class="strength-segment"></div>
+                            <div class="strength-segment"></div>
+                            <div class="strength-segment"></div>
+                        </div>
+                        <span class="strength-text">Password strength: Weak</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="confirm-password" required>
+                    </div>
+                </div>
+                <div class="terms-checkbox">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+                <button type="submit" class="btn primary-btn">Create Account</button>
+            </form>
+            <div class="social-signup">
+                <p>Or sign up with</p>
+                <div class="social-login-buttons">
+                    <button class="social-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+                    <button class="social-btn google"><i class="fab fa-google"></i> Google</button>
+                </div>
+            </div>
+            <div class="login-link">
+                <p>Already have an account? <a href="#login" class="open-modal">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Subscription Modal -->
+    <div id="subscription-modal" class="modal">
+        <div class="modal-content subscription-modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <div class="modal-icon"><i class="fas fa-ticket-alt"></i></div>
+                <h2>Choose Your <span class="highlight">Subscription</span></h2>
+                <p>Unlock access to our paranormal archives</p>
+            </div>
+            
+            <div class="subscription-tabs">
+                <div class="tab active" data-tab="monthly">Monthly</div>
+                <div class="tab" data-tab="annual">Annual <span class="save-tag">Save 25%</span></div>
+            </div>
+            
+            <div class="subscription-options">
+                <div class="subscription-option" data-plan="basic">
+                    <div class="option-header">
+                        <div class="option-check">
+                            <input type="radio" name="subscription" id="basic" checked>
+                            <label for="basic"></label>
+                        </div>
+                        <div class="option-details">
+                            <h3>Basic Access</h3>
+                            <p>Access to 50+ ghost videos</p>
+                        </div>
+                        <div class="option-price">
+                            <span class="price">$9.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="subscription-option recommended" data-plan="premium">
+                    <div class="recommended-badge">Recommended</div>
+                    <div class="option-header">
+                        <div class="option-check">
+                            <input type="radio" name="subscription" id="premium">
+                            <label for="premium"></label>
+                        </div>
+                        <div class="option-details">
+                            <h3>Premium Access</h3>
+                            <p>Access to 100+ ghost videos + exclusive content</p>
+                        </div>
+                        <div class="option-price">
+                            <span class="price">$19.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="subscription-option" data-plan="ultimate">
+                    <div class="option-header">
+                        <div class="option-check">
+                            <input type="radio" name="subscription" id="ultimate">
+                            <label for="ultimate"></label>
+                        </div>
+                        <div class="option-details">
+                            <h3>Ultimate Access</h3>
+                            <p>All content + paranormal equipment guides</p>
+                        </div>
+                        <div class="option-price">
+                            <span class="price">$29.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="payment-details">
+                <h3>Payment Details</h3>
+                <div class="payment-methods">
+                    <div class="payment-method active">
+                        <input type="radio" name="payment" id="credit-card" checked>
+                        <label for="credit-card">
+                            <i class="far fa-credit-card"></i>
+                            Credit Card
+                        </label>
+                    </div>
+                    <div class="payment-method">
+                        <input type="radio" name="payment" id="paypal">
+                        <label for="paypal">
+                            <i class="fab fa-paypal"></i>
+                            PayPal
+                        </label>
+                    </div>
+                </div>
+                
+                <form class="payment-form">
+                    <div class="form-group">
+                        <label for="card-name">Cardholder Name</label>
+                        <input type="text" id="card-name" placeholder="Name on card" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-number">Card Number</label>
+                        <div class="input-with-icon">
+                            <input type="text" id="card-number" placeholder="1234 5678 9012 3456" required>
+                            <div class="card-icons">
+                                <i class="fab fa-cc-visa"></i>
+                                <i class="fab fa-cc-mastercard"></i>
+                                <i class="fab fa-cc-amex"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expiry">Expiry Date</label>
+                            <input type="text" id="expiry" placeholder="MM/YY" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" placeholder="123" required>
+                        </div>
+                    </div>
+                    
+                    <div class="subscription-summary">
+                        <div class="summary-row">
+                            <span>Subscription</span>
+                            <span class="plan-name">Basic Access</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Billing</span>
+                            <span class="billing-period">Monthly</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total</span>
+                            <span class="total-price">$9.99/month</span>
+                        </div>
+                    </div>
+                    
+                    <div class="terms-checkbox">
+                        <input type="checkbox" id="subscription-terms" required>
+                        <label for="subscription-terms">I agree to the <a href="#">Terms of Service</a> and authorize recurring charges</label>
+                    </div>
+                    
+                    <button type="submit" class="btn primary-btn">Start Subscription</button>
+                </form>
+                
+                <div class="subscription-note">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>Your payment information is secure and encrypted. You can cancel your subscription at any time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Preview Modal -->
+    <div id="video-preview-modal" class="modal">
+        <div class="modal-content video-modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-player">
+                <video controls>
+                    <source src="https://player.vimeo.com/external/459389137.sd.mp4?s=42de6f2fd37f438dab5f401f7198a307fdb7be1a&profile_id=139&oauth2_token_id=57447761" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="video-info">
+                <h2>Basement EVP</h2>
+                <div class="video-meta">
+                    <span><i class="fas fa-calendar"></i> Recorded: March 15, 2025</span>
+                    <span><i class="fas fa-map-marker-alt"></i> Location: Blackwood Manor</span>
+                    <span><i class="fas fa-clock"></i> Duration: 2:18</span>
+                </div>
+                <p>This chilling EVP (Electronic Voice Phenomenon) was captured in the basement of Blackwood Manor, a 19th-century house with a dark history. Our team conducted an EVP session after reports of strange voices and unexplained sounds in the basement area.</p>
+                <p>At 0:42 in the video, a clear voice can be heard saying "help me" in response to our investigator's question. No one else was in the building at the time of the recording.</p>
+                <div class="video-tags">
+                    <span class="tag">EVP</span>
+                    <span class="tag">Voice</span>
+                    <span class="tag">Basement</span>
+                    <span class="tag">Clear Response</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
