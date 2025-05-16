@@ -1,0 +1,454 @@
+&lt;!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Paranormal Archives</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&family=Roboto:wght@300;400;700&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    &lt;!-- Particle effect container -->
+    <div class="particle-container">
+        <div id="particles-js"></div>
+    </div>
+
+    &lt;!-- Fog effect -->
+    <div class="fog-container">
+        <div class="fog-img fog-img-first"></div>
+        <div class="fog-img fog-img-second"></div>
+    </div>
+
+    <header>
+        <div class="logo">
+            <h1><span class="ghost-icon"><i class="fas fa-ghost"></i></span> Paranormal Archives</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videos.html">Videos</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li class="login-btn"><a href="#login">Login</a></li>
+                <li class="signup-btn"><a href="#signup">Sign Up</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-hero">
+            <div class="contact-hero-content">
+                <h1>Contact <span class="highlight">Us</span></h1>
+                <p>Have questions, feedback, or paranormal evidence to share? We'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Get in <span class="highlight">Touch</span></h2>
+                    <p>Our team is ready to assist you with any questions about our paranormal archives, subscription plans, or technical support.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="method-details">
+                                <h3>Email Us</h3>
+                                <p>For general inquiries:</p>
+                                <a href="mailto:info@paranormalarchives.com">info@paranormalarchives.com</a>
+                                <p>For technical support:</p>
+                                <a href="mailto:support@paranormalarchives.com">support@paranormalarchives.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon"><i class="fas fa-phone-alt"></i></div>
+                            <div class="method-details">
+                                <h3>Call Us</h3>
+                                <p>Monday to Friday, 9am - 5pm EST</p>
+                                <a href="tel:+18005551234">+1 (800) 555-1234</a>
+                                <p>International:</p>
+                                <a href="tel:+14165559876">+1 (416) 555-9876</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="method-details">
+                                <h3>Visit Us</h3>
+                                <p>Paranormal Archives Headquarters</p>
+                                <address>
+                                    1234 Haunted Lane<br>
+                                    Salem, MA 01970<br>
+                                    United States
+                                </address>
+                                <p><small>By appointment only</small></p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon"><i class="fas fa-comments"></i></div>
+                            <div class="method-details">
+                                <h3>Live Chat</h3>
+                                <p>Chat with our support team in real-time</p>
+                                <button class="btn secondary-btn">Start Chat</button>
+                                <p><small>Available 24/7 for Premium & Ultimate members</small></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3>Connect With Us</h3>
+                        <div class="social-icons">
+                            <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                            <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Send Us a <span class="highlight">Message</span></h2>
+                    <form class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" required>
+                                <option value="" disabled selected>Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="subscription">Subscription Question</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="evidence">Submit Evidence</option>
+                                <option value="investigation">Investigation Request</option>
+                                <option value="feedback">Feedback</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="6" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="file">Attach Files (optional)</label>
+                            <div class="file-upload">
+                                <input type="file" id="file" multiple>
+                                <div class="file-upload-label">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <span>Drag files here or click to browse</span>
+                                    <small>Max 5 files, 20MB each (Images, Videos, Audio)</small>
+                                </div>
+                            </div>
+                            <div class="file-list"></div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="newsletter" checked>
+                                <label for="newsletter">Subscribe to our newsletter for paranormal updates</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="terms" required>
+                                <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-question-circle"></i></div>
+                <h2>Frequently Asked <span class="highlight">Questions</span></h2>
+                <p>Quick answers to common questions</p>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How quickly will I receive a response to my inquiry?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We strive to respond to all inquiries within 24-48 hours during business days. Premium and Ultimate subscribers receive priority support with responses typically within 12 hours.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How can I submit my own paranormal evidence for review?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can submit evidence using our contact form above by selecting "Submit Evidence" as the subject. Please include as much detail as possible about when and where the evidence was captured, equipment used, and any relevant background information. Our team will review your submission and may contact you for additional information.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I request an investigation at my property?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, you can request an investigation by selecting "Investigation Request" as the subject in our contact form. Due to high demand, we can only accept a limited number of investigation requests. Our team evaluates each request based on reported activity, historical significance, and logistical feasibility. If selected, we'll contact you to schedule a preliminary assessment.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I update my billing information or cancel my subscription?</h3>
+                        <div class="faq-toggle"><i class="fas fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can update your billing information or cancel your subscription by logging into your account dashboard. Navigate to "Subscription Settings" where you'll find options to update payment methods or cancel your subscription. If you need assistance, contact our support team by selecting "Subscription Question" in the contact form above.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="map-section">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47142.86344380984!2d-70.93079582196028!3d42.51917699657803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3074e09664fcb%3A0x9276d3c86e2eac8c!2sSalem%2C%20MA!5e0!3m2!1sen!2sus!4v1652364112081!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <div class="section-icon"><i class="fas fa-envelope"></i></div>
+                <h2>Join Our <span class="highlight">Newsletter</span></h2>
+                <p>Stay updated with our latest paranormal findings, exclusive content, and special offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn primary-btn">Subscribe</button>
+                </form>
+                <div class="newsletter-benefits">
+                    <div class="benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Weekly paranormal updates</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Exclusive subscriber content</span>
+                    </div>
+                    <div class="benefit">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Investigation location announcements</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2><i class="fas fa-ghost"></i> Paranormal Archives</h2>
+                <p>Uncovering the truth beyond the veil</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Navigation</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="#plans">Subscription</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li><a href="videos.html?category=apparitions">Apparitions</a></li>
+                        <li><a href="videos.html?category=evp">EVP Recordings</a></li>
+                        <li><a href="videos.html?category=poltergeist">Poltergeist</a></li>
+                        <li><a href="videos.html?category=orbs">Orbs & Lights</a></li>
+                        <li><a href="videos.html?category=shadow">Shadow People</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Copyright</a></li>
+                        <li><a href="#">Disclaimer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li><a href="contact.html">Contact Form</a></li>
+                        <li><a href="mailto:info@paranormalarchives.com">Email Us</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Report Evidence</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Paranormal Archives. All rights reserved.</p>
+        </div>
+    </footer>
+
+    &lt;!-- Login Modal -->
+    <div id="login" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <div class="modal-icon"><i class="fas fa-user-circle"></i></div>
+                <h2>Member Login</h2>
+                <p>Access your paranormal archives account</p>
+            </div>
+            <form class="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="login-email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="login-password" required>
+                    </div>
+                </div>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn primary-btn">Login</button>
+                    <a href="#" class="forgot-password">Forgot Password?</a>
+                </div>
+            </form>
+            <div class="social-login">
+                <p>Or login with</p>
+                <div class="social-login-buttons">
+                    <button class="social-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+                    <button class="social-btn google"><i class="fab fa-google"></i> Google</button>
+                </div>
+            </div>
+            <div class="signup-link">
+                <p>Don't have an account? <a href="#signup" class="open-modal">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+
+    &lt;!-- Signup Modal -->
+    <div id="signup" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <div class="modal-icon"><i class="fas fa-user-plus"></i></div>
+                <h2>Create Account</h2>
+                <p>Join our paranormal community</p>
+            </div>
+            <form class="signup-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="first-name">First Name</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="first-name" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last Name</label>
+                        <div class="input-with-icon">
+                            <i class="fas fa-user"></i>
+                            <input type="text" id="last-name" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signup-email">Email</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="signup-email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="signup-password">Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="signup-password" required>
+                    </div>
+                    <div class="password-strength">
+                        <div class="strength-meter">
+                            <div class="strength-segment"></div>
+                            <div class="strength-segment"></div>
+                            <div class="strength-segment"></div>
+                            <div class="strength-segment"></div>
+                        </div>
+                        <span class="strength-text">Password strength: Weak</span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <div class="input-with-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="confirm-password" required>
+                    </div>
+                </div>
+                <div class="terms-checkbox">
+                    <input type="checkbox" id="signup-terms" required>
+                    <label for="signup-terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+                <button type="submit" class="btn primary-btn">Create Account</button>
+            </form>
+            <div class="social-signup">
+                <p>Or sign up with</p>
+                <div class="social-login-buttons">
+                    <button class="social-btn facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+                    <button class="social-btn google"><i class="fab fa-google"></i> Google</button>
+                </div>
+            </div>
+            <div class="login-link">
+                <p>Already have an account? <a href="#login" class="open-modal">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
